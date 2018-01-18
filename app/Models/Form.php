@@ -20,6 +20,7 @@ class Form extends Model
         'city',
         'number_invoice',
         'invoice',
+        'image',
         'check',
     ];
 }
