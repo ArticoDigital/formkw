@@ -59,6 +59,12 @@
                 </div>
                 <div>
                     <label for="">
+                        imagen de productos <span class="is-text-error">*</span>
+                        <input type="file" name="image" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="">
                         imagen de factura <span class="is-text-error">*</span>
                         <input type="file" name="invoice" required>
                     </label>

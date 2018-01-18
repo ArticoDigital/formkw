@@ -11,6 +11,7 @@ class FormController extends Controller
     {
         $data = $request->validated();
         $data['invoice'] = $request->file('invoice')->store('invoices');
+        $data['image'] = $request->file('image')->store('invoices');
         Form::create($data);
 
         return redirect()->back()->with('success', 1);

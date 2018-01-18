@@ -23,6 +23,7 @@ class CreateFormsTable extends Migration
             $table->string('city', 100);
             $table->string('number_invoice', 100);
             $table->string('invoice', 200);
+            $table->string('image', 200);
             $table->smallInteger('check');
             $table->timestamps();
         });

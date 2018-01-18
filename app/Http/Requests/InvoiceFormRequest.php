@@ -33,6 +33,7 @@ class InvoiceFormRequest extends FormRequest
             'city' => 'required',
             'number_invoice' => 'required',
             'invoice' => 'required|image|max:2000',
+            'image' => 'required|image|max:2000',
             'check' => 'required',
             'g-recaptcha-response' => 'required|captcha'
         ];
@@ -51,6 +52,9 @@ class InvoiceFormRequest extends FormRequest
             'invoice.required' => 'Imagen de factura requerida',
             'invoice.image' => 'La imagen no es valida',
             'invoice.max' => 'La  imagen debe ser mayor a 2MB',
+            'image.required' => 'Imagen de producto es requerida',
+            'image.image' => 'La imagen de producto no es valida',
+            'image.max' => 'La  imagen de producto debe ser mayor a 2MB',
             'check.required' => 'Debe aceptar los términos y condiciones',
             'g-recaptcha-response.required' => 'Ingresar captcha',
             'g-recaptcha-response.captcha' => 'Captcha no valido'
