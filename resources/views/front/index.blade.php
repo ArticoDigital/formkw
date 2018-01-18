@@ -64,9 +64,9 @@
                     </label>
                 </div>
                 <div class="row">
-                    <a class="col-8" href="">Póliticas</a>
-                    <a class="col-8" href="">Póliticas</a>
-                    <a class="col-16" href="">Póliticas</a>
+                    <a class="col-16 m-b-16" target="_blank" href="{{url('files/AUTORIZACIÓN_PARA_EL_TRATAMIENTO_DE_PROTECION_DE_DATOS_PERSONALES_KW.pdf')}}">Autorización tratamiento de proteccioón de datos personales</a>
+                    <a class="col-16 m-b-16" target="_blank" href="{{url('files/POLÍTICA_DE_TRATAMIENTO_DE_PROTECCIÓN_DE_DATOS_PERSONALES_KW.pdf')}}">Pólitica tratamiento de protección de datos personales</a>
+                    <a class="col-16 m-b-16" target="_blank" href="{{url('files/Reglamento_promoción_pague_2_lleve_3_thermos_final.pdf')}}">Reglamento promoción</a>
                 </div>
 
                 <div>
