@@ -1,0 +1,23 @@
+:root {
+  --primary-color: #538BF4;
+  --secondary-color: #5A6169;
+  --link-color:  #538BF4;;
+  --grid-maxWidth: 640px; //Máximo tamaño del .container
+}
+h1{
+  font-weight: 400;
+  font-size: 3.4rem;
+  text-align: center;
+}
+p{
+  font-weight: 100;
+}
+label{
+  font-weight: 200;
+}
+input[type=checkbox]{
+  position: absolute;
+}
+.is-text-error{
+  color: var(--error-color);
+}
