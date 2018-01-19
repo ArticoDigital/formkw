@@ -11,8 +11,8 @@ class FormController extends Controller
     public function update(InvoiceFormRequest $request)
     {
         $data = $request->validated();
-        $data['invoice'] = $request->file('invoice')->store('invoices');
-        $data['image'] = $request->file('image')->store('invoices');
+        $data['invoice'] = $request->file('invoice')->store('public/invoices');
+        $data['image'] = $request->file('image')->store('public/invoices');
         Form::create($data);
 
         return redirect()->back()->with('success', 1);
@@ -25,8 +25,8 @@ class FormController extends Controller
     {
         if ($token == "72FqPcmnEh3uzBxe") {
             $dataForm = Form::all();
-            Excel::create('Filename', function ($excel) use ($dataForm) {
-                $excel->sheet('name', function ($sheet) use ($dataForm) {
+            Excel::create('formulario', function ($excel) use ($dataForm) {
+                $excel->sheet('hoja 1', function ($sheet) use ($dataForm) {
                     $sheet->fromModel($dataForm);
                 });
             })->export('xls');
