@@ -12,6 +12,7 @@
 
 </head>
 <body>
+<script> fbq('track', 'CompleteRegistration');</script>
 <main>@yield('content')</main>
 <script src="{{mix('js/app.js')}}"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
